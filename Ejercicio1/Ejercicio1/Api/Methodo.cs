@@ -31,8 +31,7 @@ namespace Ejercicio1.Api
                     Dep = result1.Content.ReadAsAsync<object>().Result;
                 }
                 JObject o = JObject.Parse(Dep.ToString());
-                string name = (string)o["rates"][$"{parapais}"];
-                return "";
+                return (string)o["rates"][$"{parapais}"];
             }
             catch (Exception ex)
             {

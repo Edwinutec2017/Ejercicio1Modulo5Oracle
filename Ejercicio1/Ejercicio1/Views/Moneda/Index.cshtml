@@ -1,8 +1,12 @@
 ﻿@{
     Layout = null;
     var mensaje = TempData["msg"];
+    var de = TempData["de"];
+    var cantidad = TempData["cantidad"];
     var para = TempData["para"];
-    var total = TempData["cantidad"];
+    var equivale = TempData["equivale"];
+    var total = TempData["total"];
+
 }
 
 <!DOCTYPE html>
@@ -62,12 +66,16 @@
 
                             </fieldset>
                         }
-                        <label>@mensaje</label><br />
-                        <label>@para</label><br />
-                        <label>@total</label>
+                     <div class="form-group">
+                         <label>@de</label><br />
+                         <label>@cantidad</label><br />
+                         <label>@para</label><br />
+                         <label>@equivale</label><br />
+                         <label>@total</label><br />
+                     </div>
                         <div class="form-group">
 
-                            <h1 class="panel-title">EDWIN ALEXAMDER NOLASCO</h1>
+                            <h1 class="panel-title">EDWIN ALEXANDER NOLASCO</h1>
                             <h1 class="panel-title">CARNET: 25-0991-20212   </h1>
                         </div>
                     </div>
